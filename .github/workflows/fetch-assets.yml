@@ -1,7 +1,10 @@
 # Einmaliger Helfer: lädt die generierten Higgsfield-Assets ins Repo.
+# Läuft bei Push und beendet sich sofort, wenn die Assets schon vorhanden sind.
 # Wird nach erfolgreichem Lauf wieder entfernt.
 name: fetch-assets
-on: workflow_dispatch
+on:
+  push:
+    branches: [main]
 permissions:
   contents: write
 jobs:
@@ -9,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download assets
+      - name: Download & commit assets
         run: |
+          if [ -f .assets-raw/hero.mp4 ]; then echo "Assets vorhanden — nichts zu tun"; exit 0; fi
           mkdir -p .assets-raw
           base="https://d8j0ntlcm91z4.cloudfront.net/user_3E57IfNKFwjDkp4vDNphx7q5vPg"
           curl -fsSo .assets-raw/case-1.png "$base/hf_20260705_190125_efdf18d4-a4e3-4126-bead-ba47e8f8a249.png"
@@ -21,8 +25,6 @@ jobs:
           curl -fsSo .assets-raw/texture.png "$base/hf_20260705_190135_fed9bd81-2900-4631-a19d-8f4d81ee9112.png"
           curl -fsSo .assets-raw/hero.mp4 "$base/hf_20260705_190048_a4776196-be00-432b-9a4d-1bf7fd45054a.mp4"
           ls -la .assets-raw
-      - name: Commit
-        run: |
           git config user.name "asset-bot"
           git config user.email "asset-bot@users.noreply.github.com"
           git add .assets-raw
