@@ -65,6 +65,7 @@ wurden mit Higgsfield generiert und liegen optimiert (WebP) unter `public/assets
 - `portrait-placeholder.webp` — abstraktes Über-mich-Visual (durch echtes Foto ersetzen)
 - `section-texture.webp` — dezente Hintergrund-Textur (Qualitäts-Sektion)
 - `og-image.jpg` — Social-Media-Vorschaubild
+- `automation/{workflow,chatbot,integrations}.{mp4,webm}` + Poster — Loop-Clips der Sektion «Automation in Aktion» (als Boomerang-Loop geschnitten, daher nahtlos)
 
 ## Offene [PLATZHALTER] — vor Livegang ersetzen
 
