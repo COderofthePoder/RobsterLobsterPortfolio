@@ -57,10 +57,10 @@ Build-Toolchain (Vite) nicht ersetzen.
 
 ## Assets
 
-Alle Visuals wurden mit Higgsfield generiert und liegen optimiert (WebP,
-komprimiertes MP4/WebM) unter `public/assets/`:
+Der Hero-Hintergrund ist selbst gecodet (`src/components/HeroBackground.tsx`,
+2D-Canvas-Wireframe — perfekt loopend, ~2 KB statt Video). Die übrigen Visuals
+wurden mit Higgsfield generiert und liegen optimiert (WebP) unter `public/assets/`:
 
-- `video/hero-loop.{mp4,webm}` + `hero-poster.webp` — Hero-Hintergrund (Desktop; mobil nur Poster)
 - `mockups/case-{1..4}.webp` — Projekt-Mockups der Platzhalter-Case-Studies
 - `portrait-placeholder.webp` — abstraktes Über-mich-Visual (durch echtes Foto ersetzen)
 - `section-texture.webp` — dezente Hintergrund-Textur (Qualitäts-Sektion)

@@ -10,10 +10,10 @@ import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { useReveal } from "@/hooks/useReveal";
 
 const budgetOptions = [
-  "unter CHF 2'000",
-  "CHF 2'000 – 5'000",
-  "CHF 5'000 – 10'000",
-  "über CHF 10'000",
+  "unter CHF 1'000",
+  "CHF 1'000 – 2'500",
+  "CHF 2'500 – 5'000",
+  "über CHF 5'000",
   "noch offen",
 ];
 

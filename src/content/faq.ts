@@ -2,7 +2,7 @@ export const faqItems = [
   {
     question: "Was kostet eine Website?",
     answer:
-      "Eine fokussierte Landingpage beginnt bei CHF 1'900, eine vollständige Business-Website bei CHF 3'900. Nach dem kostenlosen Erstgespräch erhalten Sie eine transparente Offerte mit Fixpreis — keine versteckten Kosten, keine Überraschungen.",
+      "Eine fokussierte Landingpage beginnt bei CHF 990, eine vollständige Business-Website bei CHF 2'400, Automationen und Chatbots ab CHF 690. Nach dem kostenlosen Erstgespräch erhalten Sie eine transparente Offerte mit Fixpreis — keine versteckten Kosten, keine Überraschungen.",
   },
   {
     question: "Wie lange dauert ein Projekt?",
@@ -13,6 +13,11 @@ export const faqItems = [
     question: "Wie läuft die Zusammenarbeit ab?",
     answer:
       "In fünf klaren Schritten: Erstgespräch, Konzept & Design, Entwicklung, Testing und Launch. Sie sehen jederzeit den aktuellen Stand über eine Vorschau-Version und haben einen direkten Draht zu mir — keine Agentur-Zwischenschichten.",
+  },
+  {
+    question: "Welche Abläufe kann ich automatisieren?",
+    answer:
+      "Fast alles, was Sie heute von Hand erledigen: Kontaktanfragen, die automatisch in Ihrem CRM, Posteingang oder Slack landen. Offerten und Terminbestätigungen, die sich selbst verschicken. Ein KI-Chatbot, der auf Ihrer Website Fragen zu Ihrem Angebot beantwortet und Leads erfasst. Ich setze Automationen mit n8n um — damit lassen sich über 400 Tools verbinden, ohne Vendor-Lock-in.",
   },
   {
     question: "Wer kümmert sich um Hosting und Domain?",
