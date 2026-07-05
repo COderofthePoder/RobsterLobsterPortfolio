@@ -7,7 +7,7 @@ const Portfolio = () => {
   const ref = useReveal<HTMLElement>();
 
   return (
-    <section id="portfolio" ref={ref} className="border-y border-border bg-card/40 py-24 sm:py-32" aria-labelledby="portfolio-titel">
+    <section id="portfolio" ref={ref} className="py-24 sm:py-32" aria-labelledby="portfolio-titel">
       <div className="container">
         <p className="section-label reveal">Portfolio</p>
         <div className="flex flex-wrap items-end justify-between gap-6">
