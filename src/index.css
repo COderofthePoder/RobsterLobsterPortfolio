@@ -1,0 +1,110 @@
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/inter";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 19% 5%;
+    --foreground: 210 20% 96%;
+
+    --card: 217 15% 8%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 217 15% 8%;
+    --popover-foreground: 210 20% 96%;
+
+    /* Akzent: Chartreuse — bewusst kein Standard-Blau */
+    --primary: 78 100% 67%;
+    --primary-foreground: 216 19% 5%;
+
+    --secondary: 216 15% 11%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 216 15% 11%;
+    --muted-foreground: 215 12% 63%;
+
+    --accent: 78 100% 67%;
+    --accent-foreground: 216 19% 5%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 20% 96%;
+
+    --border: 216 12% 15%;
+    --input: 216 12% 15%;
+    --ring: 78 100% 67%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply mb-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-primary;
+  }
+  .section-label::before {
+    content: "";
+    @apply inline-block h-px w-8 bg-primary;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-br from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Scroll-Reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
