@@ -38,7 +38,16 @@ const Quality = () => {
   const ref = useReveal<HTMLElement>();
 
   return (
-    <section id="qualitaet" ref={ref} className="container py-24 sm:py-32" aria-labelledby="qualitaet-titel">
+    <section id="qualitaet" ref={ref} className="relative overflow-hidden py-24 sm:py-32" aria-labelledby="qualitaet-titel">
+      <img
+        src="/assets/section-texture.webp"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"
+      />
+      <div className="container relative">
       <p className="section-label reveal">Tech- & Qualitätsversprechen</p>
       <h2 id="qualitaet-titel" className="reveal max-w-2xl text-3xl font-bold sm:text-4xl lg:text-5xl">
         Standards, die jede
@@ -54,6 +63,7 @@ const Quality = () => {
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.description}</p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
