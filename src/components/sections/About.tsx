@@ -5,11 +5,11 @@ const Stat = ({ target, suffix, label, decimals = 0 }: { target: number; suffix:
   const { ref, value } = useCountUp(target, 1400, decimals);
   return (
     <div>
-      <p className="font-display text-4xl font-bold text-primary sm:text-5xl">
+      <p className="font-display text-3xl font-bold text-primary sm:text-5xl">
         <span ref={ref}>{value}</span>
         {suffix}
       </p>
-      <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+      <p className="mt-2 text-xs leading-snug text-muted-foreground sm:text-sm">{label}</p>
     </div>
   );
 };
@@ -61,7 +61,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="reveal mt-12 grid grid-cols-3 gap-6 border-t border-border pt-10 [transition-delay:200ms]">
+          <div className="reveal mt-10 grid grid-cols-3 gap-4 border-t border-border pt-8 sm:mt-12 sm:gap-6 sm:pt-10 [transition-delay:200ms]">
             <Stat target={5} suffix="+" label="Jahre als Software Engineer" />
             <Stat target={95} suffix="+" label="Lighthouse-Score, garantiert" />
             <Stat target={0.8} suffix="s" label="Typische Ladezeit" decimals={1} />

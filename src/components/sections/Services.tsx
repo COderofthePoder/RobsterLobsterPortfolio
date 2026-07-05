@@ -19,13 +19,13 @@ const Services = () => {
           <article
             key={service.title}
             className={cn(
-              "reveal group relative bg-card p-8 transition-colors duration-300 hover:bg-secondary sm:p-10",
+              "reveal group relative bg-card p-6 transition-colors duration-300 hover:bg-secondary sm:p-10",
               service.featured && "bg-primary/[0.04] sm:col-span-2",
             )}
             style={{ transitionDelay: `${i * 90}ms` }}
           >
             {service.featured && (
-              <span className="absolute right-8 top-8 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary">
+              <span className="absolute right-6 top-6 rounded-full sm:right-8 sm:top-8 border border-primary/40 bg-primary/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary">
                 Neu
               </span>
             )}

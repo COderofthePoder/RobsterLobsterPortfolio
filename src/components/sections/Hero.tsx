@@ -10,14 +10,14 @@ const Hero = () => (
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background" />
     </div>
 
-    <div className="container py-32">
+    <div className="container py-28 sm:py-32">
       <p className="section-label reveal">Webdesign, Entwicklung & Automation — Schweiz</p>
-      <h1 className="reveal max-w-4xl text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl xl:text-8xl">
+      <h1 className="reveal max-w-4xl text-4xl font-bold leading-[1.08] sm:text-6xl sm:leading-[1.05] lg:text-7xl xl:text-8xl">
         Websites, die <span className="text-primary">verkaufen</span>.
         <br />
-        Entwickelt mit Ingenieurs&#8209;Präzision.
+        Entwickelt mit Ingenieurs-Präzision.
       </h1>
-      <p className="reveal mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground [transition-delay:120ms]">
+      <p className="reveal mt-6 max-w-xl text-base leading-relaxed sm:mt-8 sm:text-lg text-muted-foreground [transition-delay:120ms]">
         Ich bin Robin Fäh — Software Engineer und Webdesigner. Ich baue massgeschneiderte
         Websites und Automationen für Firmen und Selbstständige, die nicht nur gut aussehen,
         sondern messbar performen: Ladezeit unter einer Sekunde, Lighthouse 95+.

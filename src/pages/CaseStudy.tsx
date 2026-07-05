@@ -26,7 +26,7 @@ const CaseStudy = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="container pb-24 pt-32">
+      <main className="container pb-20 pt-28 sm:pb-24 sm:pt-32">
         <Link
           to="/#portfolio"
           className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"

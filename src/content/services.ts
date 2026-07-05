@@ -41,14 +41,14 @@ export const services = [
     icon: Bot,
     title: "Web-Automation & KI-Chatbots",
     description:
-      "Repetitive Abläufe kosten Sie jede Woche Stunden — ich automatisiere sie. Kontaktanfragen, die direkt in Ihrem CRM oder Posteingang landen, automatische Offerten und Terminbestätigungen, oder ein KI-Chatbot auf Ihrer Website, der Fragen beantwortet und Leads erfasst. Umgesetzt mit n8n: über 400 Tools anbindbar, kein Vendor-Lock-in, jederzeit erweiterbar.",
+      "Repetitive Abläufe kosten Sie jede Woche Stunden — ich automatisiere sie. Kontaktanfragen, die direkt in Ihrem CRM oder Posteingang landen, automatische Offerten und Terminbestätigungen, oder ein KI-Chatbot auf Ihrer Website, der Fragen beantwortet und Leads erfasst. Umgesetzt mit n8n: über 400 Tools anbindbar, kein Vendor-Lock-in. Als Abo — Einrichtung, Betrieb, Monitoring und laufende Anpassungen inklusive, Preis nach Projektgrösse, monatlich kündbar.",
     features: [
       "KI-Chatbot mit Ihrem Firmenwissen",
       "Anfragen → CRM / E-Mail / Slack automatisch",
       "Offerten-, Termin- & Rechnungs-Workflows",
-      "Anbindung an 400+ Tools (n8n)",
+      "Betrieb, Monitoring & Anpassungen inklusive",
     ],
-    price: "ab CHF 690",
+    price: "im Abo ab CHF 99/Mt.",
     featured: true,
   },
 ] as const;
